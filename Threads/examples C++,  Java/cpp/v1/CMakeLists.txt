@@ -1,0 +1,12 @@
+PROJECT(v1)
+
+file(GLOB_RECURSE SRC main.cpp)
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
+
+ADD_DEFINITIONS(-std=c++11 -Wall -Wunused -Wunreachable-code -fPIC)
+
+ADD_EXECUTABLE(V1 ${SRC})
+
+TARGET_LINK_LIBRARIES( V1 ${OpenCV_LIBS})
+TARGET_LINK_LIBRARIES( V1 ${OpenCV_LIBS})
+
